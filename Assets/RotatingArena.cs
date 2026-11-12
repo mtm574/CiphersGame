@@ -8,6 +8,16 @@ public class RotatingArena : MonoBehaviour
 
     private Rigidbody rb;
 
+    // Animation can read the floor motion without changing how the arena rotates.
+    public float RotationSpeed => rotationSpeed;
+
+    public Vector3 GetSurfaceVelocity(Vector3 worldPosition)
+    {
+        if (!isActiveAndEnabled) return Vector3.zero;
+        Vector3 angularVelocity = transform.up * (rotationSpeed * Mathf.Deg2Rad);
+        return Vector3.Cross(angularVelocity, worldPosition - transform.position);
+    }
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
