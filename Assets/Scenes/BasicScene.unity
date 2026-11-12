@@ -2622,6 +2622,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1319746310, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_CullingMask.m_Bits
       value: 55
@@ -2699,6 +2703,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2032798983271290625, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2449787133337329439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -3439,6 +3447,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 520062005}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 81a22e3858b0c7d4eb7f3b76cc931fd2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.08
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 81a22e3858b0c7d4eb7f3b76cc931fd2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.08
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 81a22e3858b0c7d4eb7f3b76cc931fd2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.08
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 81a22e3858b0c7d4eb7f3b76cc931fd2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -3513,6 +3533,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 81a22e3858b0c7d4eb7f3b76cc931fd2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 595130757}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 81a22e3858b0c7d4eb7f3b76cc931fd2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 595130758}
     - targetCorrespondingSourceObject: {fileID: 1668005473308108988, guid: 81a22e3858b0c7d4eb7f3b76cc931fd2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 215224806}
@@ -3967,7 +3990,7 @@ Animator:
   m_GameObject: {fileID: 595130753}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 81a22e3858b0c7d4eb7f3b76cc931fd2, type: 3}
-  m_Controller: {fileID: 9100000, guid: 93ebe7e213b8bad4da1cd6ea30f8d1e3, type: 2}
+  m_Controller: {fileID: 9100000, guid: a1676e2b41f14eaa909df2e9ced86260, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4003,8 +4026,28 @@ MonoBehaviour:
     positionAdjustment: {x: 0, y: 0, z: 0}
     rotationAdjustment: {x: -45, y: 0, z: 0}
   turnSpeed: 5
-  eyeOffsetFromHead: {x: 0, y: 0.18, z: 0}
+  eyeOffsetFromHead: {x: 0, y: 0.18, z: 0.01}
   trackingWarmup: 0.25
+--- !u!114 &595130758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595130753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 583c8e1e0e5e49e0abc1f7fc4ec83906, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VRJogAnimator
+  headset: {fileID: 255963580}
+  arena: {fileID: 175063138}
+  referenceSpeed: 4.23
+  velocitySmoothing: 0.15
+  blendDuration: 0.2
+  startSpeed: 0.15
+  stopSpeed: 0.08
+  teleportDistance: 0.5
 --- !u!1001 &595766997
 PrefabInstance:
   m_ObjectHideFlags: 0
