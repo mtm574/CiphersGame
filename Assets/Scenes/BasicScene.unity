@@ -2111,6 +2111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotatingArena
   rotationSpeed: -5
+  rotationDelay: 10
 --- !u!54 &175063139
 Rigidbody:
   m_ObjectHideFlags: 0
