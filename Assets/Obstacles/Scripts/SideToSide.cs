@@ -18,9 +18,15 @@ public class SideToSide : MonoBehaviour
         startLocalPos = transform.localPosition;
     }
 
+    public CourseHitController Course { get; set; }
+    float motionTime;
+    void Awake() { motionTime = Time.time; }
+
     void Update()
     {
-        float offset = Mathf.Sin(Time.time * speed) * distance;
+        if (Course != null && Course.IsPaused) return;
+        motionTime += Time.deltaTime;
+        float offset = Mathf.Sin(motionTime * speed) * distance;
         transform.localPosition = startLocalPos + direction.normalized * offset;
     }
 }

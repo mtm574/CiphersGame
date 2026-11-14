@@ -8,6 +8,8 @@ public class RotatingArena : MonoBehaviour
     [SerializeField] private float rotationDelay = 0.0f;
     private float delayRemaining;
     private Rigidbody rb;
+    public CourseHitController Course { get; set; }
+    public bool IsCoursePaused => Course != null && Course.IsPaused;
 
     // Animation can read the floor motion without changing how the arena rotates.
     public float RotationSpeed => rotationSpeed;
@@ -15,7 +17,7 @@ public class RotatingArena : MonoBehaviour
 
     public Vector3 GetSurfaceVelocity(Vector3 worldPosition)
     {
-        if (!isActiveAndEnabled || delayRemaining > 0f) return Vector3.zero;
+        if (!isActiveAndEnabled || IsCoursePaused || delayRemaining > 0f) return Vector3.zero;
         Vector3 angularVelocity = transform.up * (rotationSpeed * Mathf.Deg2Rad);
         return Vector3.Cross(angularVelocity, worldPosition - transform.position);
     }
@@ -29,6 +31,7 @@ public class RotatingArena : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (IsCoursePaused) return;
         // Delay
         if (delayRemaining > 0f)
         {

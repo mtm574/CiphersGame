@@ -16,13 +16,19 @@ public class WindmillRotator : MonoBehaviour
     [Tooltip("How fast the speed oscillates, in cycles per second.")]
     public float variationRate = 0.2f;
 
+    public CourseHitController Course { get; set; }
+    float motionTime;
+    void Awake() { motionTime = Time.time; }
+
     void Update()
     {
+        if (Course != null && Course.IsPaused) return;
+        motionTime += Time.deltaTime;
         float currentSpeed = speed;
 
         if (varySpeed)
         {
-            currentSpeed *= 1f + Mathf.Sin(Time.time * variationRate * Mathf.PI * 2f) * variationAmount;
+            currentSpeed *= 1f + Mathf.Sin(motionTime * variationRate * Mathf.PI * 2f) * variationAmount;
         }
 
         transform.Rotate(axis.normalized, currentSpeed * Time.deltaTime, Space.Self);

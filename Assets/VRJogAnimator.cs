@@ -48,6 +48,8 @@ public class VRJogAnimator : MonoBehaviour
     void OnDisable() { ResetMotion(); }
     void OnApplicationFocus(bool hasFocus) { ResetMotion(); }
 
+    public void ResetForCoursePause() { ResetMotion(); }
+
     private void ResetMotion()
     {
         sampled = jogging = false;
@@ -73,7 +75,7 @@ public class VRJogAnimator : MonoBehaviour
     private void UpdateLocomotion(bool tracked, float deltaTime)
     {
         if (!ready) return;
-        if (!tracked || headset == null || arena == null || !animator.enabled || deltaTime <= 0f || deltaTime > 0.25f)
+        if (!tracked || (arena != null && arena.IsCoursePaused) || headset == null || arena == null || !animator.enabled || deltaTime <= 0f || deltaTime > 0.25f)
         {
             ResetMotion();
             return;
