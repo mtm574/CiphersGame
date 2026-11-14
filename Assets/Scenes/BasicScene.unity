@@ -576,6 +576,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 27854192}
+  - component: {fileID: 900100000}
   - component: {fileID: 27854195}
   - component: {fileID: 27854194}
   - component: {fileID: 27854193}
@@ -1426,6 +1427,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 112367713}
+  - component: {fileID: 900100001}
   - component: {fileID: 112367714}
   m_Layer: 0
   m_Name: SideWindmill (4)
@@ -2053,6 +2055,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 175063137}
+  - component: {fileID: 900100020}
   - component: {fileID: 175063139}
   - component: {fileID: 175063138}
   m_Layer: 0
@@ -2110,7 +2113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91288fcb237e82346bd6ff5b06b3956d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotatingArena
-  rotationSpeed: -5
+  rotationSpeed: -3
   rotationDelay: 10
 --- !u!54 &175063139
 Rigidbody:
@@ -3480,6 +3483,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 311710040}
+  - component: {fileID: 900100002}
   - component: {fileID: 311710043}
   - component: {fileID: 311710042}
   - component: {fileID: 311710041}
@@ -4558,6 +4562,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 451449208}
+  - component: {fileID: 900100003}
   - component: {fileID: 451449211}
   - component: {fileID: 451449210}
   - component: {fileID: 451449209}
@@ -7902,6 +7907,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 736933412}
+  - component: {fileID: 900100004}
   - component: {fileID: 736933413}
   m_Layer: 0
   m_Name: SideWindmill (5)
@@ -31690,6 +31696,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 774962248}
+  - component: {fileID: 900100005}
   m_Layer: 0
   m_Name: Middle Door2
   m_TagString: IsTrigger
@@ -32604,6 +32611,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 852430424}
+  - component: {fileID: 900100006}
   - component: {fileID: 852430425}
   m_Layer: 0
   m_Name: Windmill
@@ -32870,6 +32878,277 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 882844923}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!20 &900099999 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 441087506}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &900100000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27854191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94825d3d150a45678b1df2efda5ce5d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CourseObstacle
+--- !u!114 &900100001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112367712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94825d3d150a45678b1df2efda5ce5d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CourseObstacle
+--- !u!114 &900100002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311710039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94825d3d150a45678b1df2efda5ce5d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CourseObstacle
+--- !u!114 &900100003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451449207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94825d3d150a45678b1df2efda5ce5d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CourseObstacle
+--- !u!114 &900100004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736933411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94825d3d150a45678b1df2efda5ce5d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CourseObstacle
+--- !u!114 &900100005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774962247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94825d3d150a45678b1df2efda5ce5d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CourseObstacle
+--- !u!114 &900100006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852430423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94825d3d150a45678b1df2efda5ce5d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CourseObstacle
+--- !u!114 &900100007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911171063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94825d3d150a45678b1df2efda5ce5d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CourseObstacle
+--- !u!114 &900100008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120914230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94825d3d150a45678b1df2efda5ce5d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CourseObstacle
+--- !u!114 &900100009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123075747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94825d3d150a45678b1df2efda5ce5d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CourseObstacle
+--- !u!114 &900100010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192146129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94825d3d150a45678b1df2efda5ce5d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CourseObstacle
+--- !u!114 &900100011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323547394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94825d3d150a45678b1df2efda5ce5d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CourseObstacle
+--- !u!114 &900100012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343614711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94825d3d150a45678b1df2efda5ce5d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CourseObstacle
+--- !u!114 &900100013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346191884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94825d3d150a45678b1df2efda5ce5d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CourseObstacle
+--- !u!114 &900100014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387524602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94825d3d150a45678b1df2efda5ce5d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CourseObstacle
+--- !u!114 &900100015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525221408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94825d3d150a45678b1df2efda5ce5d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CourseObstacle
+--- !u!114 &900100016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527008866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94825d3d150a45678b1df2efda5ce5d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CourseObstacle
+--- !u!114 &900100017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824769813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94825d3d150a45678b1df2efda5ce5d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CourseObstacle
+--- !u!114 &900100018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847538382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94825d3d150a45678b1df2efda5ce5d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CourseObstacle
+--- !u!114 &900100019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857628701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94825d3d150a45678b1df2efda5ce5d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CourseObstacle
+--- !u!114 &900100020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175063136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 900aa1dcea194ca78bc705ba57bace7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CourseHitController
+  avatar: {fileID: 595130756}
+  playerCamera: {fileID: 900099999}
+  flashShader: {fileID: 4800000, guid: 68dc9b14047a4632bcf6f547c97152c0, type: 3}
+  pauseSeconds: 2
+  rearmSeconds: 0.1
+  hitboxSizes:
+    head: 0.11
+    torso: 0.15
+    upperArm: 0.06
+    forearm: 0.05
+    hand: 0.07
+    thigh: 0.09
+    calf: 0.07
+    foot: 0.06
 --- !u!1 &903691766
 GameObject:
   m_ObjectHideFlags: 0
@@ -32912,6 +33191,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 911171064}
+  - component: {fileID: 900100007}
   m_Layer: 0
   m_Name: Side Door2
   m_TagString: IsTrigger
@@ -34534,6 +34814,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1120914231}
+  - component: {fileID: 900100008}
   m_Layer: 0
   m_Name: Mace Field2
   m_TagString: IsTrigger
@@ -34576,6 +34857,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1123075748}
+  - component: {fileID: 900100009}
   - component: {fileID: 1123075749}
   m_Layer: 0
   m_Name: SideWindmill (2)
@@ -34987,6 +35269,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1192146130}
+  - component: {fileID: 900100010}
   - component: {fileID: 1192146133}
   - component: {fileID: 1192146132}
   - component: {fileID: 1192146131}
@@ -36878,6 +37161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1323547395}
+  - component: {fileID: 900100011}
   m_Layer: 0
   m_Name: Side Door1
   m_TagString: IsTrigger
@@ -37026,6 +37310,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1343614712}
+  - component: {fileID: 900100012}
   m_Layer: 0
   m_Name: Mace Field
   m_TagString: IsTrigger
@@ -37064,6 +37349,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1346191885}
+  - component: {fileID: 900100013}
   - component: {fileID: 1346191886}
   m_Layer: 0
   m_Name: Windmill (1)
@@ -37460,6 +37746,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1387524603}
+  - component: {fileID: 900100014}
   m_Layer: 0
   m_Name: Targets2 (1)
   m_TagString: Untagged
@@ -38801,6 +39088,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1525221409}
+  - component: {fileID: 900100015}
   m_Layer: 0
   m_Name: Middle Door
   m_TagString: IsTrigger
@@ -38837,6 +39125,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1527008867}
+  - component: {fileID: 900100016}
   m_Layer: 0
   m_Name: Targets2
   m_TagString: Untagged
@@ -40634,6 +40923,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1824769814}
+  - component: {fileID: 900100017}
   - component: {fileID: 1824769815}
   m_Layer: 0
   m_Name: SideWindmill (3)
@@ -40890,6 +41180,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1847538383}
+  - component: {fileID: 900100018}
   m_Layer: 0
   m_Name: Targets1
   m_TagString: Untagged
@@ -41039,6 +41330,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1857628705}
+  - component: {fileID: 900100019}
   - component: {fileID: 1857628704}
   - component: {fileID: 1857628703}
   - component: {fileID: 1857628702}
