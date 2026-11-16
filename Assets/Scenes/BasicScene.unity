@@ -2114,7 +2114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotatingArena
   rotationSpeed: -3
-  rotationDelay: 79
+  rotationDelay: 69
   audioSource: {fileID: 1763998012}
   secondAudioSource: {fileID: 1622161877}
   secondAudioDelay: 68

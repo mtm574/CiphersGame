@@ -118,6 +118,7 @@ public sealed class CourseHitController : MonoBehaviour
     }
     public void Contact(PlayerBodyHitbox hitbox, Collider other, bool entering)
     {
+        if (!GetComponent<RotatingArena>().HasStarted) return;
         if (!isActiveAndEnabled || !TrackingReady || other == null) return;
         var obstacle = other.GetComponentInParent<CourseObstacle>();
         if (obstacle == null || !obstacle.isActiveAndEnabled) return;
