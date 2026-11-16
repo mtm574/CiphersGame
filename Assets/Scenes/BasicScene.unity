@@ -2114,7 +2114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotatingArena
   rotationSpeed: -3
-  rotationDelay: 69
+  rotationDelay: 79
   audioSource: {fileID: 1763998012}
   secondAudioSource: {fileID: 1622161877}
   secondAudioDelay: 68
@@ -35221,11 +35221,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6ecd90b1e9bfd14692bcd1fd5c4fd9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VRHitCounter
-  hitFlash: {fileID: 0}
-  hitCount: 0
-  gameOver: 0
-  hitCounter: {fileID: 0}
-  gameOverText: {fileID: 0}
 --- !u!1001 &1188541926
 PrefabInstance:
   m_ObjectHideFlags: 0
