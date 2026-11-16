@@ -4,7 +4,7 @@ using UnityEngine;
 public class RotatingArena : MonoBehaviour
 {
     [SerializeField] private float rotationSpeed = 12.0f;
-    [SerializeField] private float rotationDelay = 79.0f;
+    [SerializeField] private float rotationDelay = 69.0f;
 
     [Header("Audio")]
     [SerializeField] private AudioSource audioSource;
@@ -24,6 +24,7 @@ public class RotatingArena : MonoBehaviour
 
     public float RotationSpeed => rotationSpeed;
     public float RotationDelay => rotationDelay;
+    public bool HasStarted => hasStarted;
 
     public Vector3 GetSurfaceVelocity(Vector3 worldPosition)
     {
@@ -52,22 +53,22 @@ public class RotatingArena : MonoBehaviour
             audioSource.Play();
     }
 
-    void Update()
-    {
-        if (IsCoursePaused || secondAudioPlayed)
-            return;
+    // void Update()
+    // {
+    //     if (IsCoursePaused || secondAudioPlayed)
+    //         return;
 
-        secondAudioTimer -= Time.deltaTime;
+    //     secondAudioTimer -= Time.deltaTime;
 
-        if (secondAudioTimer <= 0f)
-        {
-            secondAudioPlayed = true;
+    //     if (secondAudioTimer <= 0f)
+    //     {
+    //         secondAudioPlayed = true;
 
-            // Play the second audio 68 seconds after game start.
-            if (secondAudioSource != null)
-                secondAudioSource.Play();
-        }
-    }
+    //         // Play the second audio 68 seconds after game start.
+    //         if (secondAudioSource != null)
+    //             secondAudioSource.Play();
+    //     }
+    // }
 
     void FixedUpdate()
     {
@@ -82,6 +83,7 @@ public class RotatingArena : MonoBehaviour
                 return;
 
             hasStarted = true;
+            secondAudioSource?.Play();
 
             if (jumpWaveController != null)
                 jumpWaveController.StartJumping();
