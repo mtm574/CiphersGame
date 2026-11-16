@@ -4,7 +4,7 @@ using UnityEngine;
 public class RotatingArena : MonoBehaviour
 {
     [SerializeField] private float rotationSpeed = 12.0f;
-    [SerializeField] private float rotationDelay = 69.0f;
+    [SerializeField] private float rotationDelay = 79.0f;
 
     [Header("Audio")]
     [SerializeField] private AudioSource audioSource;
