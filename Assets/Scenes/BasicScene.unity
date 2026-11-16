@@ -33443,6 +33443,7 @@ MonoBehaviour:
   avatar: {fileID: 595130756}
   playerCamera: {fileID: 900099999}
   flashShader: {fileID: 4800000, guid: 68dc9b14047a4632bcf6f547c97152c0, type: 3}
+  audioSource: {fileID: 1622161877}
   pauseSeconds: 2
   rearmSeconds: 0.1
   hitboxSizes:
