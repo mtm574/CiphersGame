@@ -29,7 +29,6 @@ public sealed class CourseHitController : MonoBehaviour
     float clock;
     float trackedTime;
     VRHitFlash flash;
-    VRHitCounter hitCounter;
     GameObject proxyRoot;
     bool wasPaused;
     public bool IsPaused => isActiveAndEnabled && pauseRemaining > 0f;
@@ -50,8 +49,6 @@ public sealed class CourseHitController : MonoBehaviour
         flash = gameObject.AddComponent<VRHitFlash>();
         flash.Initialize(playerCamera, flashShader);
 
-        hitCounter = playerCamera.gameObject.AddComponent<VRHitCounter>();
-        hitCounter.hitFlash = flash;
         proxyRoot = new GameObject("Player Hitboxes (runtime)");
         UnityEngine.SceneManagement.SceneManager.MoveGameObjectToScene(proxyRoot, gameObject.scene);
         proxyRoot.transform.SetParent(transform.parent, true); // Never inherit the rotating arena or tiny head scale.
@@ -140,9 +137,6 @@ public sealed class CourseHitController : MonoBehaviour
         if (!isActiveAndEnabled || IsPaused || obstacle == null || !obstacle.isActiveAndEnabled) return false;
         pauseRemaining = pauseSeconds;
         wasPaused = true;
-        if (hitCounter != null)
-            hitCounter.RegisterHit();
-        else
             flash?.Flash();
             audioSource?.Play();
         ResetJogging();
