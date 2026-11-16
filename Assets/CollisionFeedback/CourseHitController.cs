@@ -8,7 +8,7 @@ public sealed class CourseHitController : MonoBehaviour
     [SerializeField] Animator avatar;
     [SerializeField] Camera playerCamera;
     [SerializeField] Shader flashShader;
-
+    [SerializeField] AudioSource audioSource;
     [SerializeField, Min(0f)] float pauseSeconds = 2f;
     [SerializeField, Min(0f)] float rearmSeconds = 0.1f;
     [System.Serializable]
@@ -48,6 +48,7 @@ public sealed class CourseHitController : MonoBehaviour
         foreach (var mover in GetComponentsInChildren<SideToSide>(true)) mover.Course = this;
         flash = gameObject.AddComponent<VRHitFlash>();
         flash.Initialize(playerCamera, flashShader);
+
         proxyRoot = new GameObject("Player Hitboxes (runtime)");
         UnityEngine.SceneManagement.SceneManager.MoveGameObjectToScene(proxyRoot, gameObject.scene);
         proxyRoot.transform.SetParent(transform.parent, true); // Never inherit the rotating arena or tiny head scale.
@@ -117,6 +118,7 @@ public sealed class CourseHitController : MonoBehaviour
     }
     public void Contact(PlayerBodyHitbox hitbox, Collider other, bool entering)
     {
+        if (!GetComponent<RotatingArena>().HasStarted) return;
         if (!isActiveAndEnabled || !TrackingReady || other == null) return;
         var obstacle = other.GetComponentInParent<CourseObstacle>();
         if (obstacle == null || !obstacle.isActiveAndEnabled) return;
@@ -136,7 +138,8 @@ public sealed class CourseHitController : MonoBehaviour
         if (!isActiveAndEnabled || IsPaused || obstacle == null || !obstacle.isActiveAndEnabled) return false;
         pauseRemaining = pauseSeconds;
         wasPaused = true;
-        flash?.Flash();
+            flash?.Flash();
+            audioSource?.Play();
         ResetJogging();
         return true;
     }
